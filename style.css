@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	background: #FCA384;
+	font-family: sans-serif;
+}
+
+footer {
+	position: relative;
+	top: 50%
+}
+
+div > p{color:white}
+div {
+	height: 50px;
+	background: black;
+	display: flex;
+	place-items: center;
+	justify-content: center
+}
+
+h1 {
+	background: #FCA384;
+	z-index:2;
+}
+
+a{text-decoration: none;color:#AF5954}
+a:before {
+	content: '>';
+	color: black;
+}
+
+gamescontainer {
+	margin-left: 50px;
+	font-size: 18px;
+}
+
+username {
+	animation: marquee 10s infinite linear;
+	z-index: 1
+}
+
+header {
+	height: 200px;
+	display: flex;
+	place-items: center;
+	overflow: hidden;
+}
+
+@keyframes marquee {
+	from {
+		position: relative;
+		left: calc(100% - 100px)
+	}
+	to {
+		position: relative;
+		left: -100px
+	}
+}
